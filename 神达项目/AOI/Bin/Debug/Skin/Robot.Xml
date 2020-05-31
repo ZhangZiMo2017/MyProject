@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window >
+	<VerticalLayout padding="5,5,5,5" >	
+		<HorizontalLayout inset="8,0,0,0" height="30">
+			<Option pos="10, 0, 90, 30"  float="true" align="bottom" name="0" text="机器人" textcolor="#FF000000" font="7"  normalimage="toolbar_pushed.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="button_nor.bmp" userdata="0" group="RobotViewBar" selected="true"/>
+			<Option pos="95, 0, 175, 30" float="true" align="bottom" name="1" text="IO" textcolor="#FF000000" font="7"  normalimage="toolbar_pushed.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="button_nor.bmp" userdata="1" group="RobotViewBar"/>		
+			<Option pos="180, 0, 260, 30" float="true" align="bottom" name="1" text="Tray" textcolor="#FF000000" font="7"  normalimage="toolbar_pushed.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="button_nor.bmp" userdata="2" group="RobotViewBar"/>		
+		</HorizontalLayout>
+		<TabLayout name="RobotViewBar">
+          <HorizontalLayout>
+			<VerticalLayout padding="5,10,5,5" width="260"  bordersize="1" bordercolor="#FFDCDCDC" bkcolor="#FFFFFFFF">				
+				<HorizontalLayout bordersize="1" padding="-40,15,5,5" height="240">	
+					<Button name="BtnXAdd" float="true" pos="50,27,96,73" normalimage="file='Robot-Move.png' source='0,0,46,46'" hotimage="file='Robot-Move.png' source='46,0,92,46'" />
+					<Button name="BtnYDec" float="true" pos="106,0,152,46" normalimage="file='Robot-Move.png' source='92,46,138,92'" hotimage="file='Robot-Move.png' source='138,46,184,92'" />
+					<Button name="BtnXDec" float="true" pos="162,27,208,73" normalimage="file='Robot-Move.png' source='92,0,138,46'" hotimage="file='Robot-Move.png' source='138,0,184,46'" />
+					<Button name="BtnYAdd" float="true" pos="106,60,152,106" normalimage="file='Robot-Move.png' source='0,46,46,92'" hotimage="file='Robot-Move.png' source='46,46,92,92'" />
+					<Button name="BtnZAdd" float="true" pos="218,0,264,46" normalimage="file='Robot-Move.png' source='0,92,46,138'" hotimage="file='Robot-Move.png' source='46,92,92,138'" />
+					<Button name="BtnZDec" float="true" pos="218,60,264,106" normalimage="file='Robot-Move.png' source='92,92,138,138'" hotimage="file='Robot-Move.png' source='138,92,184,138'" />
+					<Button name="BtnUDec" float="true" pos="50,116,96,162" normalimage="file='Robot-Move.png' source='92,138,138,184'" hotimage="file='Robot-Move.png' source='138,138,184,184'" />
+					<Button name="BtnUAdd" float="true" pos="50,176,96,222" normalimage="file='Robot-Move.png' source='0,138,46,184'" hotimage="file='Robot-Move.png' source='46,138,92,184'" />
+					<Label  name="LblXPos" align="right" text="550.000" textpadding="0,0,2,0" float="true" bordersize="1" bordercolor="#FF000000" pos="110,140,180,163" />
+					<Label  name="LblYPos" align="right" text="550.000" textpadding="0,0,2,0" float="true" bordersize="1" bordercolor="#FF000000" pos="195,140,264,163" />
+					<Label  name="LblZPos" align="right" text="550.000" textpadding="0,0,2,0" float="true" bordersize="1" bordercolor="#FF000000" pos="110,199,180,222" />
+					<Label  name="LblUPos" align="right" text="550.000" textpadding="0,0,2,0" float="true" bordersize="1" bordercolor="#FF000000" pos="195,199,264,222" />			
+					<Label  text="X(mm)" align="center" float="true" pos="110,116,180,140" />
+					<Label  text="Y(mm)" align="center" float="true" pos="195,116,264,140" />
+					<Label  text="Z(mm)" align="center" float="true" pos="110,176,180,199" />
+					<Label  text="U(deg)" align="center" float="true" pos="195,176,264,199" />
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="25">
+					<Container />
+					<Label text="速度:" align="center"  width="50"/>
+					<Container />
+					<Edit name="EdtSpeed" align="center" text="98" bordersize="1" bordercolor="#FF000000" bkcolor="#FFD28EFF" width="70"/>
+					<Container />
+					<Button name="BtnSet" text="设置" bkcolor="#FFF0F0F0" width="50" borderround="2,2" bordersize="1" bordercolor="#FF000000" focusbordercolor="#FF55F0F0"/>
+					<Container />
+				</HorizontalLayout>
+
+				<HorizontalLayout height="25">
+					<Container width="20"/>
+					<Label text="距离:" align="center"  width="50"/>
+					<Container width="5"/>
+					<Combo name="CmbDistance"   itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3"/>
+				</HorizontalLayout>
+
+				<HorizontalLayout height="25">
+					<Container width="20"/>
+					<Label text="工具:" align="center"  width="50"/>
+					<Container width="5"/>
+					<Combo name="CmbTool"   itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<Container />		
+				<HorizontalLayout height="25">
+					<Container />
+					<Button name="BtnCalibNGPos" text="校准NG位" bkimage="BtnNor.png" pushedimage="BtnHot.png" width="100" bordersize="1"  bordercolor="#FF000000" bkcolor="#FFF0F0F0" />
+					<Container />
+					<Button name="BtnCalibOKPos" text="校准PS位" bkimage="BtnNor.png" pushedimage="BtnHot.png" width="100" bordersize="1" bordercolor="#FF000000" bkcolor="#FFF0F0F0" />
+					<Container />
+				</HorizontalLayout>
+				<Container height="10"/>				
+				<HorizontalLayout height="25">
+					<Container />
+					<Button name="BtnCalibCamera" text="校准相机" bkimage="BtnNor.png" pushedimage="BtnHot.png" width="100" bordersize="1"  bordercolor="#FF000000" bkcolor="#FFF0F0F0" />
+					<Container />
+					<Button name="BtnCalibPickPos" text="校准取板位" bkimage="BtnNor.png" pushedimage="BtnHot.png" width="100" bordersize="1" bordercolor="#FF000000" bkcolor="#FFF0F0F0" />
+					<Container />
+				</HorizontalLayout>
+				<Container height="5"/>		
+			</VerticalLayout>
+			
+			<VerticalLayout name="VerRobotPosition" vscrollbar="true" >
+				<List name="LstRobotPos" hscrollbar="true" vscrollbar="true" itemselectedimage="Statusbar.png">
+					<ListHeader height="30">
+						<ListHeaderItem text="机械手点位名称" bkimage="Statusbar.png" align="center" bordersize="1" padding="5,5,0,0" bordercolor="#FFFFFFFF"/>
+						<ListHeaderItem text="X轴坐标" bkimage="Statusbar.png" align="center" width="70" bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF"/>
+						<ListHeaderItem text="Y轴坐标" bkimage="Statusbar.png" align="center" width="70"bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF" />
+						<ListHeaderItem text="Z轴坐标" bkimage="Statusbar.png" align="center" width="70"bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF" />
+						<ListHeaderItem text="U轴坐标" bkimage="Statusbar.png" align="center" width="70"bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF"/>
+						<ListHeaderItem text="移动" bkimage="Statusbar.png"  align="center" width="70"bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF"/>
+						<ListHeaderItem text="设置" bkimage="Statusbar.png"  align="center" width="70"bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF"/>
+						<ListHeaderItem text="保存" bkimage="Statusbar.png"  align="center" width="80"bordersize="1" padding="-1,5,5,0" bordercolor="#FFFFFFFF"/>
+					</ListHeader>
+				</List>
+			</VerticalLayout>
+			<Label text="机械手控制" align="center" height="20" float="true" pos="100,0,160, 20"/>
+          </HorizontalLayout>
+          <HorizontalLayout>
+			<IO />
+          </HorizontalLayout>
+		  <HorizontalLayout>
+			<Tray />
+          </HorizontalLayout>
+        </TabLayout>
+		
+	</VerticalLayout>
+</Window>

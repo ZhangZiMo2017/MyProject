@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window size="308,228" caption="0,0,0,36" roundcorner="4,4">
+	<VerticalLayout>
+
+		<HorizontalLayout>
+			<VerticalLayout>
+				<HorizontalLayout height="75">
+					<Label text="检测结果" align="center" bordercolor="#FF000000" padding="5,5,5,5" bordersize="1" width="100">
+					</Label>
+					<VerticalLayout>
+						<Container height="5"/>
+						<HorizontalLayout >
+							<Container width="5"/>
+							<Button name="BtnRst3_0" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst3_1" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst3_2" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst3_3" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst3_4" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst3_5" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+						</HorizontalLayout>
+						<Container height="5"/>
+						<HorizontalLayout>
+							<Container width="5"/>
+							<Button name="BtnRst2_0" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst2_1" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst2_2" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst2_3" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst2_4" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst2_5" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+						</HorizontalLayout>
+						<Container height="5"/>
+						<HorizontalLayout>
+							<Container width="5"/>
+							<Button name="BtnRst1_0" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst1_1" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst1_2" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst1_3" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst1_4" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst1_5" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+						</HorizontalLayout>
+						<Container height="5"/>
+						<HorizontalLayout >
+							<Container width="5"/>
+							<Button name="BtnRst0_0" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst0_1" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst0_2" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst0_3" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst0_4" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+							<Button name="BtnRst0_5" text="1" bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+							<Container width="5"/>
+						</HorizontalLayout>
+						<Container height="5"/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<HorizontalLayout  height="100" >
+					<Label text="OK盘状态" align="center" bordercolor="#FF000000" padding="5,5,5,5" bordersize="1" width="100">
+					</Label>
+					<HorizontalLayout name="Hor_OKBoard">						
+					</HorizontalLayout>	
+				</HorizontalLayout>
+				<HorizontalLayout name="Hor_OrgBoard" height="100" >
+					<Label text="NG盘状态" align="center" bordercolor="#FF000000" padding="5,5,5,5" bordersize="1" width="100">
+					</Label>
+					<HorizontalLayout name="Hor_NGBoard">
+					</HorizontalLayout>	
+				</HorizontalLayout>
+				<VerticalLayout>
+						<HorizontalLayout height="40" padding="1,0,1,0" bordercolor="#FF000000" bordersize="1">
+							<Button width="32" height="32" pos="4,4,0,0" float="true" bkimage="Message.png" mouse="false"/>
+							<Text text="提示信息" textcolor="#FF0000FF" pos="40,10,200, 40" float="true"align="left" font="8" mouse="false"/>
+						</HorizontalLayout>	
+						<VerticalLayout name="VerInfoMessage" vscrollbar="true">
+							
+						</VerticalLayout>
+				</VerticalLayout>
+			</VerticalLayout>
+			<Container width="5" />
+			<HorizontalLayout padding="3,3,3,3">			
+				<VerticalLayout >		
+					<HorizontalLayout height="40" padding="1,0,0,0" bordercolor="#FF000000" bordersize="1">
+						<Button width="32" height="32" pos="4,4,0,0" float="true" bkimage="Count.png" mouse="false"/>
+						<Text text="数据统计" textcolor="#FF0000FF" pos="40,10,200, 40" float="true"align="left" font="8" mouse="false"/>
+					</HorizontalLayout>		
+					<HorizontalLayout height="29">
+						<Button text="时间" align="center" font="6" mouse="false"  padding="1,-1,0,0" bordercolor="#FF000000" bordersize="1" width="200"/>
+						<Button text="OK" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button text="NG" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button text="NoCode" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>				
+						<Button text="良率" textcolor="#FF00FF00" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>																
+					</HorizontalLayout>
+					<HorizontalLayout height="29">
+						<Button name="BtnCurHour" text="10 -- 11" align="center" font="6" mouse="false"  padding="1,-1,0,0" bordercolor="#FF000000" bordersize="1" width="200"/>
+						<Button name="BtnHPsPcs" text="732" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button name="BtnHFiPcs" text="732" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button name="BtnHOtPcs" text="732" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>				
+						<Button name="BtnHYield" text="99.70" textcolor="#FF00FF00" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>										
+					</HorizontalLayout>
+					<HorizontalLayout height="29">
+						<Button text="全天" align="center" font="6" mouse="false" padding="1,-1,0,0" bordercolor="#FF000000" bordersize="1" width="200"/>
+						<Button name="BtnDPsPcs" text="10030" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button name="BtnDFiPcs" text="30" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button name="BtnDOtPcs" text="30" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+						<Button name="BtnDYield" text="99.70" textcolor="#FF00FF00" align="center" font="6" padding="-1,-1,0,0" bordercolor="#FF000000" bordersize="1" mouse="false"/>
+					</HorizontalLayout>	
+					<Container height="5" />
+					<VerticalLayout>
+						<HorizontalLayout height="40" padding="1,0,1,0" bordercolor="#FF000000" bordersize="1">
+							<Button width="32" height="32" pos="4,4,0,0" float="true" bkimage="Alarm.png" mouse="false"/>
+							<Text text="报警信息" textcolor="#FF0000FF" pos="40,10,200, 40" float="true"align="left" font="8" mouse="false"/>
+						</HorizontalLayout>	
+						<VerticalLayout name="VerAlarmMessage" vscrollbar="true">
+						</VerticalLayout>
+					</VerticalLayout>
+				</VerticalLayout>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<Container height="2" padding="0,3,0,0"bkcolor="#FF0000FF"/>
+		<HorizontalLayout height="80" padding="0,2,0,0">
+			<Container />
+			<Button name="BtnReset" text="复位" foreimage="file='Reset.png' dest='8,0,72,64'" textpadding="0,64,0,2" width="80 " hotimage="toolbar_hover.png"/>
+			<Container />
+			<Button name="BtnStart" text="启动" foreimage="file='Start.png' dest='8,0,72,64'" textpadding="0,64,0,2" width="80" hotimage="toolbar_hover.png"/>
+			<Container />
+			<Button name="BtnStop" text="停止" foreimage="file='Stop.png' dest='8,0,72,64'" textpadding="0,64,0,2" width="80" hotimage="toolbar_hover.png"/>
+			<Container />
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

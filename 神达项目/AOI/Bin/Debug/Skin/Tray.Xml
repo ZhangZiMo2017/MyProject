@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window >
+	<Include source="scrollbar.xml" />
+	<HorizontalLayout padding="5,5,5,5" >	
+		<Label text="Z1Pos" align="center" float="true" pos="5,5,105,25" />
+		<Edit  name="EdtZ1Pos" text="0000" align="center" float="true" pos="5,30,105,50"  bordersize="1" bordercolor="#FF000000" bkcolor="#FFFFFFFF" enabled="false"/>
+		<Label text="Z2Pos" align="center" float="true" pos="110,5,210,25" />
+		<Edit  name="EdtZ2Pos" text="0000" align="center" float="true" pos="110,30,210,50"  bordersize="1" bordercolor="#FF000000" bkcolor="#FFFFFFFF" enabled="false"/>
+		<Button name="BtnZ1Add" foreimage="file='AxisZ_P.png' dest='0,0,32,64'" float="true" pos="5,55,37,119"/>
+		<Button name="BtnZ1Dec" foreimage="file='AxisZ_N.png'  dest='0,0,32,64'"  float="true" pos="5,139,37,203" />
+		<Label text="Z1" float="true" pos="5,119,37,139" align="center"/>
+		<Button name="BtnZ2Add" foreimage="file='AxisZ_P.png' dest='0,0,32,64'" float="true" pos="47,55,79,119"/>
+		<Button name="BtnZ2Dec" foreimage="file='AxisZ_N.png'  dest='0,0,32,64'"  float="true" pos="47,139,79,203" />
+		<Label text="Z2" float="true" pos="47,119,79,139" align="center"/>
+	
+		<Button name="BtnStoreZ1Offset" text="保存Z1" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,240,215,270" bordersize="1" bordercolor="#FF000000"  />
+		<Button name="BtnCalibZ1Pos" text="标定Z1" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,280,215,310" bordersize="1" bordercolor="#FF000000"  />
+		<Button name="BtnStoreZ2Offset" text="保存Z2" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,320,215,350" bordersize="1" bordercolor="#FF000000"/>
+		<Button name="BtnCalibZ2Pos" text="标定Z2" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,360,215,390" bordersize="1" bordercolor="#FF000000"  />
+		<Button name="BtnStoreZ2Pos" text="保存Z1无板上升高度" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,400,215,430" bordersize="1" bordercolor="#FF000000" />
+		<Button name="BtnTrayNR" text="Tray空跑" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,480,215,510" bordersize="1" bordercolor="#FF000000" />
+		<Button name="BtnHomeZ1" text="Z1回零" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="10,440,105,470" bordersize="1" bordercolor="#FF000000" />
+		<Button name="BtnHomeZ2" text="Z2回零" bkimage="BtnNor.png" hotimage="BtnHot.png" pushedimage="BtnPushed.png" float="true" pos="115,440,210,470" bordersize="1" bordercolor="#FF000000" />
+		<Combo name="CmbTrayAxisDis" float="true" pos="100,65,215,85" itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3"/>
+	</HorizontalLayout>
+</Window>

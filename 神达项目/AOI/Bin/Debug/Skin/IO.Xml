@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window >
+	<HorizontalLayout padding="5,5,5,5" >	
+		
+		<VerticalLayout>
+			<List name="LstOutPort" hscrollbar="true" vscrollbar="true" itemselectedimage="Statusbar.png">
+				<ListHeader height="30" >		
+					<ListHeaderItem text="输出" bkimage="Statusbar.png" align="center" bordersize="1" padding="5,5,0,0" bordercolor="#FFFFFFFF"/>
+					<ListHeaderItem text="状态" bkimage="Statusbar.png" width="55"  bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF"/>
+				</ListHeader>
+			</List>
+		</VerticalLayout>
+		
+		
+		<VerticalLayout  >
+			<List name="LstInPort" hscrollbar="true" vscrollbar="true" itemselectedimage="Statusbar.png">
+				<ListHeader height="30" >		
+					<ListHeaderItem text="输入" bkimage="Statusbar.png" align="center" bordersize="1" padding="5,5,0,0" bordercolor="#FFFFFFFF"/>
+					<ListHeaderItem text="状态" bkimage="Statusbar.png" width="55"  bordersize="1" padding="-1,5,0,0" bordercolor="#FFFFFFFF"/>
+				</ListHeader>
+			</List>
+		</VerticalLayout>
+	
+	</HorizontalLayout>
+</Window>

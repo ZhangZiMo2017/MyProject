@@ -1,0 +1,150 @@
+ENVT0100,LM:2019/06/21 23:43:22:416,DS:0000001998,CS:08213,MA:4C-CC-6A-F2-31-44,EI:           
+sActiveChild="Main.prg"
+bMdiMaximized=True
+nProgramFileCount=1
+ProgramFile1 {
+	sName="Main.prg"
+	bOpened=True
+	nWinState=2
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=607
+		nHeight=398
+	}
+}
+nIncludeFileCount=0
+nPointFileCount=1
+PointFile1 {
+	sName="robot1.pts"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=933
+		nHeight=546
+	}
+}
+sActiveWindow="main.prg"
+CmdWindow {
+	bOpened=False
+	Window {
+		nLeft=39
+		nTop=376
+		nWidth=839
+		nHeight=470
+	}
+	nWinState=0
+}
+RunWindow {
+	bOpened=False
+	Window {
+		nLeft=54
+		nTop=449
+		nWidth=504
+		nHeight=300
+	}
+	nWinState=0
+}
+IOLabelEditor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=844
+		nHeight=579
+	}
+	nWinState=0
+}
+IOMonitor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+}
+Simulator {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+}
+TaskMgr {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+}
+Macros {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+}
+RobotMgr {
+	bOpened=False
+	Window {
+		nLeft=215
+		nTop=329
+		nWidth=748
+		nHeight=518
+	}
+}
+UserErrorEditor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+	nWinState=0
+}
+VisionGuide {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+	nWinState=0
+}
+GUIBuilder {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=870
+		nHeight=576
+	}
+	nWinState=0
+}
+ProjectExplorer {
+	bProgramsOpened=True
+	bIncludesOpened=False
+	bLabelsOpened=False
+	bMacrosOpened=False
+	bPointsOpened=False
+	bFunctionsOpened=True
+	bVisionOpened=False
+	bVisionSequencesOpened=False
+	bVisionCalibsOpened=False
+	bGUIBOpened=False
+	bGUIBFormsOpened=False
+	bRobotPointsOpened=True
+	bCommonPointsOpened=False
+	bRobotsOpened1=True
+}

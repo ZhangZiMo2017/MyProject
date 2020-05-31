@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window >
+	<VerticalLayout padding="5,5,5,5" name="ParamList">	
+		<HorizontalLayout bordersize="1" padding="5,5,5,5" >	
+			<VerticalLayout padding="5,0,5,0" bkcolor="#FFFFFFFF" bordercolor="#FF768D9B" bordersize="1" >
+				<HorizontalLayout height="40" >
+					<Button width="32" height="32" pos="4,4,0,0" float="true" bkimage="BaseParam.png" mouse="false"  padding="5,3,0,3"/>
+					<Text text="基本参数" pos="40,10,200, 40" float="true"align="left" textcolor="#FF000000" font="6" mouse="false"  padding="5,3,0,3"/>
+					<Container />
+					<Button name="BtnStoreBaseParam" tooltip="保存" width="32" height="32" padding="4,4,10,0" bkimage="Store.png"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Label text="RobotIP:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtRobotIp" text="D:\ACC\Mes\" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Label text="启动端口:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtInitPort" text="5000" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+					<Label text="移动端口:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtMovePort" text="2000" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Label text="控制端口:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtCtrlPort" text="2001" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+					<Label text="视觉端口:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtVisionPort" text="2010" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Label text="安全高度:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtSafeHigh" text="90" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+					<Label text="放OK板高度:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtOKHigh" text="85" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Label text="放NG板高度:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtNGHigh" text="90" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+					<Label text=""  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="" text="" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="40">
+					<Label text="良率预报警:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtYeildTarget" text="90" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+					<Label text="良率报警:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3"/>
+					<Edit name="EdtYeildSpec" text="85" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+				</HorizontalLayout>
+			</VerticalLayout>		
+			<VerticalLayout padding="5,0,5,0" bkcolor="#FFFFFFFF" bordercolor="#FF768D9B" bordersize="1" vscrollbar="true">			
+				<HorizontalLayout height="40" >
+					<Button width="32" height="32" pos="4,4,0,0" float="true" bkimage="Information.png" mouse="false"  padding="5,3,0,3"/>
+					<Text text="产品参数" pos="40,10,200, 40" float="true"align="left" textcolor="#FF000000" font="6" mouse="false"  padding="5,3,0,3"/>
+					<Container />
+					<Button name="BtnDelProduct" tooltip="删除" width="32" height="32" padding="4,4,10,0" bkimage="Delete.png"/>
+					<Container width="10"/>
+					<Button name="BtnChgProduct" tooltip="切换" width="32" height="32" padding="4,4,10,0" bkimage="Change.png"/>
+					<Container width="10"/>
+					<Button name="BtnNewProduct" tooltip="新建" width="32" height="32" padding="4,4,10,0" bkimage="Create.png"/>
+					<Container width="10"/>
+					<Button name="BtnStoreProduct" tooltip="保存" width="32" height="32" padding="4,4,10,0" bkimage="Store.png"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="30" >
+					<Label text="产品名:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Combo name="CmbProductList" textpadding="2,0,25,0" itemtextpadding="2,0,0,0" itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3">
+					</Combo>
+					<Label text="新建产品名:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtNewProductName" text="" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Label text="产品的行:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtProductRow" text="3" font="7" bordersize="1" bordercolor="#FF000000" align="left"  padding="5,3,3,3"/>
+					<Label text="产品的列:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtProductCol" text="4" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3" />
+				</HorizontalLayout>
+				<HorizontalLayout  height="40" >
+					<Label text="Tray的行"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtTrayRow" text="4" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+					<Label text="Tray的列:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtTrayCol" text="10" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  height="40" >
+					<Label text="取放循环:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtPickCircle" text="4" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+					<Label text="拍照次数:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtCaptureCount" text="1" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+			
+				<HorizontalLayout height="40" >
+					<Button mouse="false"/>					
+					<Button name="BtnStorePick" tooltip="保存" width="32" height="32" padding="4,4,10,0" bkimage="Store.png"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="30" >
+					<Label text="取放循环:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Combo name="CmbPickList" textpadding="2,0,25,0" itemtextpadding="2,0,0,0" itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3">
+					</Combo>
+					<Label text="取板模式:"  tooltip="0:表示一次取4PCS 1:表示一次取1PCS"  font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" />
+					<Edit name="EdtPickMode"  text="1" font="7" bordersize="1" width="50" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+					<Button text="取板次数:"   font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtPickCount" text="1" width="50" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout  height="40" >
+					<Label text="1号吸头取板编号:"   font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtOneSuckerNum" width="100" text="1" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+			
+					<Label text="2号吸头取板编号:"   font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtTwoSuckerNum" text="1" width="100" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout  height="40" >
+					<Label text="3号吸头取板编号:"   font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtThreeSuckerNum" width="100"text="1" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>	
+					<Label text="4号吸头取板编号:"  font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Edit name="EdtFourSuckerNum" width="100" text="1" font="7" bordersize="1" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40" >
+					<Button mouse="false"/>					
+					<Button name="BtnStoreCapture" tooltip="保存" width="32" height="32" padding="4,4,10,0" bkimage="Store.png"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="30" >
+					<Label text="拍照编号:"  width="100" font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" mouse="false"/>
+					<Combo name="CmbCaptureList" textpadding="2,0,25,0" itemtextpadding="2,0,0,0" itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3">
+					</Combo>
+					<Label text="产品个数:"  tooltip="表示拍照图像中产品个数"  font="7" align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" />
+					<Edit name="EdtProductCount"  text="1" font="7" bordersize="1" width="50" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+					
+				</HorizontalLayout>
+				<HorizontalLayout height="30" >
+					<Combo name="CmbProductIndex" textpadding="2,0,25,0" itemtextpadding="2,0,0,0" itemalign="left" normalimage="file='Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" padding="5,3,3,3">
+					</Combo>
+					<Edit name="EdtProductNum"  text="1" font="7" bordersize="1" width="50" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+					<Label text="行:"  tooltip="表示拍照图像中行数"  font="7"  align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" />
+					<Edit name="EdtCaptureRow"  text="1" font="7" bordersize="1" width="30" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+					<Label text="列:"  tooltip="表示拍照图像中列数"  font="7"  align="center" bordersize="1" bordercolor="#FF000000"  padding="5,3,0,3" />
+					<Edit name="EdtCaptureCol"  text="1" font="7" bordersize="1" width="30" bordercolor="#FF000000" align="left" padding="5,3,3,3"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

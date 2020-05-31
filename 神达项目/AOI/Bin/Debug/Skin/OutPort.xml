@@ -1,0 +1,7 @@
+<Window >
+			<HorizontalLayout height="25" >
+				<Label name="LblIOName" text="点位名字" bkimage="Statusbar.png" align="center" bordersize="1" padding="5,-1,0,0" bordercolor="#FFFFFFFF"/>
+				<Button name="BtnStatus" tooltip="状态" width="40"  normalimage="file='RedLed.png' dest='10,3,30,23'" bordersize="1" padding="-1,-1,10,0" bordercolor="#FFFFFFFF"/>
+			</HorizontalLayout>
+
+</Window >

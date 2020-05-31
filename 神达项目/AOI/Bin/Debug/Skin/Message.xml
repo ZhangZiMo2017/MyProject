@@ -1,0 +1,6 @@
+<Window >
+	<HorizontalLayout height="30" >
+		<Label name="LblTime" font="3" text="1" textcolor="#FF0000FF" align="center" height="30" padding="1,-1,0,1" width="80" bordercolor="#FF000000" bordersize="1" />
+		<Label name="LblMessage" font="3" textpadding="2,0,2,0" text="1231231231231312313133" height="30" padding="-1,-1,1,1" bordercolor="#FF000000" bordersize="1" />
+	</HorizontalLayout>
+</Window >

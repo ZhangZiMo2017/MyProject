@@ -1,0 +1,17 @@
+<Window >
+	<VerticalLayout  padding="2,2,2,2">
+		<Container height="3"/>
+		<Label name="BtnBoard_0" text="1" height="15" align="center"  bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+		<Container height="3"/>
+		<Label name="BtnBoard_1" text="1" height="15" align="center"  bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+		<Container height="3"/>
+		<Label name="BtnBoard_2" text="1" height="15" align="center"  bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+		<Container height="3"/>
+		<Label name="BtnBoard_3" text="1" height="15" align="center"  bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+		<Container height="3"/>
+		<Label name="BtnBoard_4" text="1" height="15" align="center"  bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+		<Container height="3"/>
+		<Label name="BtnBoard_5" text="1" height="15" align="center"  bordersize="1" bordercolor="#FF000000" bkcolor="#FF00FF00"/>
+		<Container height="3"/>
+	</VerticalLayout>
+</Window >

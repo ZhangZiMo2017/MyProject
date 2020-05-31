@@ -1,0 +1,13 @@
+<Window >
+	<HorizontalLayout height="30" >
+		<Label name="LblPosName" text="机械手点位名称"  bkcolor="#FFF0F0F0"  align="center" bordersize="1" padding="5,-1,0,0" bordercolor="#FFFFFFFF"/>
+		<Edit name="EdtXPos" text="50.5"  bkcolor="#FFF0F0F0"  align="center" width="70" bordersize="1" padding="-1,-1,0,0" bordercolor="#FFFFFFFF"/>
+		<Edit name="EdtYPos" text="10.33"  bkcolor="#FFF0F0F0"  align="center" width="70"bordersize="1" padding="-1,-1,0,0" bordercolor="#FFFFFFFF" />
+		<Edit name="EdtZPos" text="-52"  bkcolor="#FFF0F0F0"  align="center" width="70"bordersize="1" padding="-1,-1,0,0" bordercolor="#FFFFFFFF" />
+		<Edit name="EdtUPos" text="160.0"  bkcolor="#FFF0F0F0"  align="center" width="70"bordersize="1" padding="-1,-1,0,0" bordercolor="#FFFFFFFF"/>
+		<Button name="BtnPosMove" text="移动" bkimage="BtnNor.png" pushedimage="BtnHot.png" bkcolor="#FFF0F0F0"  align="center" width="70"bordersize="1" padding="-1,-1,0,0" bordercolor="#FFFFFFFF"/>
+		<Button name="BtnPosSet" text="设定" bkimage="BtnNor.png" pushedimage="BtnHot.png" bkcolor="#FFF0F0F0"  align="center" width="70"bordersize="1" padding="-1,-1,0,0" bordercolor="#FFFFFFFF"/>
+		<Button name="BtnPosStore" text="保存" bkimage="BtnNor.png" pushedimage="BtnHot.png" bkcolor="#FFF0F0F0"  align="center" width="70"bordersize="1" padding="-1,-1,5,0" bordercolor="#FFFFFFFF"/>
+	</HorizontalLayout>
+
+</Window >

@@ -1,0 +1,12 @@
+[Product]
+Row=2
+Col=3
+CaptrueCount=3
+PickCircle=2
+[Tray]
+Row=3
+Col=8
+NgRow=3
+NgCol=6
+[GTPos]
+FSensorPos=287478
